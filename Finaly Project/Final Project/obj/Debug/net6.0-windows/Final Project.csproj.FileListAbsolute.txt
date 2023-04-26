@@ -1,0 +1,19 @@
+C:\Users\Student\Documents\GitHub\allawd1100coursework-JacobJames310\Final Project\Finaly Project\Final Project\obj\Debug\net6.0-windows\Final Project.csproj.AssemblyReference.cache
+C:\Users\Student\Documents\GitHub\allawd1100coursework-JacobJames310\Final Project\Finaly Project\Final Project\obj\Debug\net6.0-windows\Final_Project.Form1.resources
+C:\Users\Student\Documents\GitHub\allawd1100coursework-JacobJames310\Final Project\Finaly Project\Final Project\obj\Debug\net6.0-windows\Final_Project.Register.resources
+C:\Users\Student\Documents\GitHub\allawd1100coursework-JacobJames310\Final Project\Finaly Project\Final Project\obj\Debug\net6.0-windows\Final Project.csproj.GenerateResource.cache
+C:\Users\Student\Documents\GitHub\allawd1100coursework-JacobJames310\Final Project\Finaly Project\Final Project\obj\Debug\net6.0-windows\Final Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\Documents\GitHub\allawd1100coursework-JacobJames310\Final Project\Finaly Project\Final Project\obj\Debug\net6.0-windows\Final Project.AssemblyInfoInputs.cache
+C:\Users\Student\Documents\GitHub\allawd1100coursework-JacobJames310\Final Project\Finaly Project\Final Project\obj\Debug\net6.0-windows\Final Project.AssemblyInfo.cs
+C:\Users\Student\Documents\GitHub\allawd1100coursework-JacobJames310\Final Project\Finaly Project\Final Project\obj\Debug\net6.0-windows\Final Project.csproj.CoreCompileInputs.cache
+C:\Users\Student\Documents\GitHub\allawd1100coursework-JacobJames310\Final Project\Finaly Project\Final Project\bin\Debug\net6.0-windows\Final Project.exe
+C:\Users\Student\Documents\GitHub\allawd1100coursework-JacobJames310\Final Project\Finaly Project\Final Project\bin\Debug\net6.0-windows\Final Project.deps.json
+C:\Users\Student\Documents\GitHub\allawd1100coursework-JacobJames310\Final Project\Finaly Project\Final Project\bin\Debug\net6.0-windows\Final Project.runtimeconfig.json
+C:\Users\Student\Documents\GitHub\allawd1100coursework-JacobJames310\Final Project\Finaly Project\Final Project\bin\Debug\net6.0-windows\Final Project.dll
+C:\Users\Student\Documents\GitHub\allawd1100coursework-JacobJames310\Final Project\Finaly Project\Final Project\bin\Debug\net6.0-windows\Final Project.pdb
+C:\Users\Student\Documents\GitHub\allawd1100coursework-JacobJames310\Final Project\Finaly Project\Final Project\obj\Debug\net6.0-windows\Final Project.dll
+C:\Users\Student\Documents\GitHub\allawd1100coursework-JacobJames310\Final Project\Finaly Project\Final Project\obj\Debug\net6.0-windows\refint\Final Project.dll
+C:\Users\Student\Documents\GitHub\allawd1100coursework-JacobJames310\Final Project\Finaly Project\Final Project\obj\Debug\net6.0-windows\Final Project.pdb
+C:\Users\Student\Documents\GitHub\allawd1100coursework-JacobJames310\Final Project\Finaly Project\Final Project\obj\Debug\net6.0-windows\Final Project.genruntimeconfig.cache
+C:\Users\Student\Documents\GitHub\allawd1100coursework-JacobJames310\Final Project\Finaly Project\Final Project\obj\Debug\net6.0-windows\ref\Final Project.dll
+C:\Users\Student\Documents\GitHub\allawd1100coursework-JacobJames310\Final Project\Finaly Project\Final Project\obj\Debug\net6.0-windows\Final_Project.AdminLogin.resources
