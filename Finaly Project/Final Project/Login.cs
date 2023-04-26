@@ -32,10 +32,7 @@ namespace Final_Project
         private void btnLogin_Click(object sender, EventArgs e)
         {
             
-            if (txtUsername.Text.Equals(username)) && (txtPassword.Text.Equals(password)))
-            {
-
-            }
+            
         }
     }
 }
