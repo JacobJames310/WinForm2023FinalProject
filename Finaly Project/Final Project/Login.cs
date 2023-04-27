@@ -1,20 +1,14 @@
+using System.Data.SqlClient;
+
 namespace Final_Project
 {
     public partial class Form1 : Form
     {
-        Employee timeSheet = new Employee();
-        List<CreateUser> timeSheetUsers = new List<CreateUser>();
-        Employee creditKarma= new Employee();
-        List<CreateUser> creditKarmaUsers = new List<CreateUser>();
-
+        private readonly string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\13142\\OneDrive\\Documents\\GitHubClass\\WinForm2023FinalProject\\Finaly Project\\Final Project\\bin\\Debug\\LoginDatabase.mdf\";Integrated Security=True;Connect Timeout=30";
         public Form1()
         {
             InitializeComponent();
-            timeSheetUsers.Add(new CreateUser("jacobjames101", "123yes", "jacob993@yahoo.com", "Jacob", "James", "556-112"));
-            timeSheetUsers.Add(new CreateUser("stan199", "401dfls", "stan001@gmail.com", "Stan", "Marsh", "991-449"));
-            timeSheetUsers.Add(new CreateUser("kenny994", "fdskl949", "mccormick90@hotmail.com", "Kenny", "McCormick", "049-491"));
-            timeSheetUsers.Add(new CreateUser("erik191", "ktj113", "erik019@aol.com", "Eric", "Cartman", "331-305"));
-
+            
         }
 
         
@@ -25,14 +19,20 @@ namespace Final_Project
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            Register f2 = new Register();
-            f2.Show();
+            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\13142\\OneDrive\\Documents\\GitHubClass\\WinForm2023FinalProject\\Finaly Project\\Final Project\\bin\\Debug\\LoginDatabase.mdf\";Integrated Security=True;Connect Timeout=30";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                Register f2 = new Register();
+                f2.Show();
+            }
+                
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            
-            
+           Register register = new Register();
+            register.Show();
+
         }
     }
 }
