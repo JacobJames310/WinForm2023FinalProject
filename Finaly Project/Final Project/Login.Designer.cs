@@ -1,6 +1,6 @@
 ﻿namespace Final_Project
 {
-    partial class Form1
+    partial class frmLogin
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -119,7 +119,7 @@
             this.lblCreate.Size = new System.Drawing.Size(0, 15);
             this.lblCreate.TabIndex = 8;
             // 
-            // Form1
+            // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -133,7 +133,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtUsername);
-            this.Name = "Form1";
+            this.Name = "frmLogin";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();

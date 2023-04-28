@@ -1,6 +1,6 @@
 ﻿namespace Final_Project
 {
-    partial class Register
+    partial class frmRegister
     {
         /// <summary>
         /// Required designer variable.
@@ -39,11 +39,12 @@
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
+            this.lblError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnRegister
             // 
-            this.btnRegister.Location = new System.Drawing.Point(177, 301);
+            this.btnRegister.Location = new System.Drawing.Point(176, 321);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(119, 62);
             this.btnRegister.TabIndex = 0;
@@ -131,11 +132,23 @@
             this.txtEmail.Size = new System.Drawing.Size(100, 23);
             this.txtEmail.TabIndex = 10;
             // 
-            // Register
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.ForeColor = System.Drawing.Color.Red;
+            this.lblError.Location = new System.Drawing.Point(61, 276);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(126, 15);
+            this.lblError.TabIndex = 11;
+            this.lblError.Text = "Fill out all of the boxes";
+            this.lblError.Visible = false;
+            // 
+            // frmRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblError);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtLastName);
@@ -147,7 +160,7 @@
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnRegister);
-            this.Name = "Register";
+            this.Name = "frmRegister";
             this.Text = "Register";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -167,5 +180,6 @@
         private TextBox txtLastName;
         private TextBox txtPassword;
         private TextBox txtEmail;
+        private Label lblError;
     }
 }

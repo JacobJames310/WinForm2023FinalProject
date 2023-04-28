@@ -1,26 +1,25 @@
 
 
 
+using Final_Project.Migrations;
+using System.Data.Common;
+using System.Text;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Final_Project
 {
-    public partial class Form1 : Form
+    public partial class frmLogin : Form
     {
         CreateUserContext userDb;
         List<CreateUser> userList;
         string username;
         string password;
 
-        public Form1()
+        public frmLogin()
         {
             userDb = new CreateUserContext();
             InitializeComponent();
 
-
-            userList = userDb.CreateUsers.Select(c => c).ToList();
-
-            int foundUser = -1;
         }
 
         
@@ -31,20 +30,26 @@ namespace Final_Project
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            
-            {
-                Register f2 = new Register();
-                f2.Show();
-            }
+            frmRegister frmRegister = new frmRegister();
+            frmRegister.Show();
                 
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-           Register register = new Register();
-            register.Show();
-            username = Convert.ToString(txtUsername.Text);
-            password = Convert.ToString(txtPassword.Text);
+            username = txtUsername.Text;
+            password = txtPassword.Text;
+            userList = userDb.CreateUsers.OrderBy(c => c).Where(c => c.CreateUserId == username).Select(c => c).ToList();
+            userList = userDb.CreateUsers.OrderBy(c => c).Where(c => c.Password == password).Select(c => c).ToList();
+            frmUserInterface frmUserInterface = new frmUserInterface();
+            frmUserInterface.Show();
+
+            for (int i = 0; i < userList.Count; i++)
+            {
+                
+            }
+
+            
         }
         
     }
