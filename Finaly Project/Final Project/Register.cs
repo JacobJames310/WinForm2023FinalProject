@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Final_Project.Migrations;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,6 +22,8 @@ namespace Final_Project
         {
             Form1 f1 = new Form1();
             f1.Show();
+
+            
         }
     }
 }

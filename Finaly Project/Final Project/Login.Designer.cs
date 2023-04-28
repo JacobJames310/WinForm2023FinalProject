@@ -37,6 +37,7 @@
             this.btnRegister = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.lblCreate = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtUsername
@@ -110,11 +111,20 @@
             this.label4.Text = resources.GetString("label4.Text");
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
+            // lblCreate
+            // 
+            this.lblCreate.AutoSize = true;
+            this.lblCreate.Location = new System.Drawing.Point(87, 311);
+            this.lblCreate.Name = "lblCreate";
+            this.lblCreate.Size = new System.Drawing.Size(0, 15);
+            this.lblCreate.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblCreate);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnRegister);
@@ -140,5 +150,6 @@
         private Button btnRegister;
         private Label label3;
         private Label label4;
+        private Label lblCreate;
     }
 }

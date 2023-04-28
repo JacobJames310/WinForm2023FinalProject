@@ -1,14 +1,26 @@
-using System.Data.SqlClient;
+
+
+
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Final_Project
 {
     public partial class Form1 : Form
     {
-        private readonly string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\13142\\OneDrive\\Documents\\GitHubClass\\WinForm2023FinalProject\\Finaly Project\\Final Project\\bin\\Debug\\LoginDatabase.mdf\";Integrated Security=True;Connect Timeout=30";
+        CreateUserContext userDb;
+        List<CreateUser> userList;
+        string username;
+        string password;
+
         public Form1()
         {
+            userDb = new CreateUserContext();
             InitializeComponent();
-            
+
+
+            userList = userDb.CreateUsers.Select(c => c).ToList();
+
+            int foundUser = -1;
         }
 
         
@@ -19,8 +31,7 @@ namespace Final_Project
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\13142\\OneDrive\\Documents\\GitHubClass\\WinForm2023FinalProject\\Finaly Project\\Final Project\\bin\\Debug\\LoginDatabase.mdf\";Integrated Security=True;Connect Timeout=30";
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            
             {
                 Register f2 = new Register();
                 f2.Show();
@@ -32,7 +43,9 @@ namespace Final_Project
         {
            Register register = new Register();
             register.Show();
-
+            username = Convert.ToString(txtUsername.Text);
+            password = Convert.ToString(txtPassword.Text);
         }
+        
     }
 }

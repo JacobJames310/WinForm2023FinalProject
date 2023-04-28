@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\13142\\OneDrive\\Documents\\GitHubClass\\WinForm2023FinalProject\\Finaly Project\\Final Project\\Final Project.csproj": {}
+    "C:\\Users\\Student\\Documents\\GitHub\\allawd1100coursework-JacobJames310\\Final Project\\Finaly Project\\Final Project\\Final Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\13142\\OneDrive\\Documents\\GitHubClass\\WinForm2023FinalProject\\Finaly Project\\Final Project\\Final Project.csproj": {
+    "C:\\Users\\Student\\Documents\\GitHub\\allawd1100coursework-JacobJames310\\Final Project\\Finaly Project\\Final Project\\Final Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\13142\\OneDrive\\Documents\\GitHubClass\\WinForm2023FinalProject\\Finaly Project\\Final Project\\Final Project.csproj",
+        "projectUniqueName": "C:\\Users\\Student\\Documents\\GitHub\\allawd1100coursework-JacobJames310\\Final Project\\Finaly Project\\Final Project\\Final Project.csproj",
         "projectName": "Final Project",
-        "projectPath": "C:\\Users\\13142\\OneDrive\\Documents\\GitHubClass\\WinForm2023FinalProject\\Finaly Project\\Final Project\\Final Project.csproj",
-        "packagesPath": "C:\\Users\\13142\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\13142\\OneDrive\\Documents\\GitHubClass\\WinForm2023FinalProject\\Finaly Project\\Final Project\\obj\\",
+        "projectPath": "C:\\Users\\Student\\Documents\\GitHub\\allawd1100coursework-JacobJames310\\Final Project\\Finaly Project\\Final Project\\Final Project.csproj",
+        "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Student\\Documents\\GitHub\\allawd1100coursework-JacobJames310\\Final Project\\Finaly Project\\Final Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\13142\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +39,18 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

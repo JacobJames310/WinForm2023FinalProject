@@ -39,13 +39,11 @@
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtKey = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnRegister
             // 
-            this.btnRegister.Location = new System.Drawing.Point(169, 376);
+            this.btnRegister.Location = new System.Drawing.Point(177, 301);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(119, 62);
             this.btnRegister.TabIndex = 0;
@@ -133,29 +131,11 @@
             this.txtEmail.Size = new System.Drawing.Size(100, 23);
             this.txtEmail.TabIndex = 10;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(61, 270);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(26, 15);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Key";
-            // 
-            // txtKey
-            // 
-            this.txtKey.Location = new System.Drawing.Point(126, 267);
-            this.txtKey.Name = "txtKey";
-            this.txtKey.Size = new System.Drawing.Size(100, 23);
-            this.txtKey.TabIndex = 12;
-            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.txtKey);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtLastName);
@@ -187,7 +167,5 @@
         private TextBox txtLastName;
         private TextBox txtPassword;
         private TextBox txtEmail;
-        private Label label6;
-        private TextBox txtKey;
     }
 }
