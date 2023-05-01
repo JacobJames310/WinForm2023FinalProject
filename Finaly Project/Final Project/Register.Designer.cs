@@ -161,7 +161,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnRegister);
             this.Name = "frmRegister";
-            this.Text = "Register";
+            this.Text = "Admin Register";
             this.ResumeLayout(false);
             this.PerformLayout();
 

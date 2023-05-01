@@ -1,6 +1,4 @@
 C:\Users\Student\Documents\GitHub\allawd1100coursework-JacobJames310\Final Project\Finaly Project\Final Project\obj\Debug\net6.0-windows\Final Project.csproj.AssemblyReference.cache
-C:\Users\Student\Documents\GitHub\allawd1100coursework-JacobJames310\Final Project\Finaly Project\Final Project\obj\Debug\net6.0-windows\Final_Project.Form1.resources
-C:\Users\Student\Documents\GitHub\allawd1100coursework-JacobJames310\Final Project\Finaly Project\Final Project\obj\Debug\net6.0-windows\Final_Project.Register.resources
 C:\Users\Student\Documents\GitHub\allawd1100coursework-JacobJames310\Final Project\Finaly Project\Final Project\obj\Debug\net6.0-windows\Final Project.csproj.GenerateResource.cache
 C:\Users\Student\Documents\GitHub\allawd1100coursework-JacobJames310\Final Project\Finaly Project\Final Project\obj\Debug\net6.0-windows\Final Project.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Student\Documents\GitHub\allawd1100coursework-JacobJames310\Final Project\Finaly Project\Final Project\obj\Debug\net6.0-windows\Final Project.AssemblyInfoInputs.cache
@@ -186,3 +184,6 @@ C:\Users\13142\OneDrive\Documents\GitHubClass\WinForm2023FinalProject\Finaly Pro
 C:\Users\13142\OneDrive\Documents\GitHubClass\WinForm2023FinalProject\Finaly Project\Final Project\obj\Debug\net6.0-windows\Final_Project.frmRegister.resources
 C:\Users\13142\OneDrive\Documents\GitHubClass\WinForm2023FinalProject\Finaly Project\Final Project\obj\Debug\net6.0-windows\Final_Project.frmUserInterface.resources
 C:\Users\13142\OneDrive\Documents\GitHubClass\WinForm2023FinalProject\Finaly Project\Final Project\obj\Debug\net6.0-windows\Final Project.csproj.CopyComplete
+C:\Users\Student\Documents\GitHub\allawd1100coursework-JacobJames310\Final Project\Finaly Project\Final Project\obj\Debug\net6.0-windows\Final_Project.frmLogin.resources
+C:\Users\Student\Documents\GitHub\allawd1100coursework-JacobJames310\Final Project\Finaly Project\Final Project\obj\Debug\net6.0-windows\Final_Project.frmRegister.resources
+C:\Users\Student\Documents\GitHub\allawd1100coursework-JacobJames310\Final Project\Finaly Project\Final Project\obj\Debug\net6.0-windows\Final_Project.frmUserInterface.resources

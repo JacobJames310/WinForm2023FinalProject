@@ -38,7 +38,7 @@ namespace Final_Project
                 CreateUserContext.SaveChanges();
             }
             MessageBox.Show("Registration successful!");
-
+             
             frmLogin frm = new frmLogin();
             frm.Show();
             this.Hide();

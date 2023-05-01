@@ -45,8 +45,8 @@ namespace Final_Project
             if (isValid)
             {
                 
-                frmUserInterface frm = new frmUserInterface();
-                frm.Show();
+                frmUserInterface frmUserInterface = new frmUserInterface();
+                frmUserInterface.Show();
                 this.Hide();
                 lblCreate.Text = "";
             }
@@ -54,14 +54,20 @@ namespace Final_Project
             {
                 lblCreate.Text = "Invalid username/password";
             }
+            
         }
         private bool ValidateUser(string username, string password)
         {
             
-            using (var db = new CreateUserContext())
+            using (CreateUserContext db = new CreateUserContext())
             {
-                return db.CreateUser.Any(u => u.CreateUserId == username && u.Password == password);
+                return db.CreateUser.Any(c => c.CreateUserId == username && c.Password == password);
             }
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

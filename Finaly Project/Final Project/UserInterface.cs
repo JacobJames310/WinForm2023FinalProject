@@ -10,11 +10,22 @@ using System.Windows.Forms;
 
 namespace Final_Project
 {
-    public partial class frmUserInterface : Form
+    public partial class frmUserInterface : CreateUser
     {
         public frmUserInterface()
         {
             InitializeComponent();
+            
         }
+        
+        public void Greeting()
+        {
+            lblGreeting.Text = $"Welcome {FirstName}";
+        }
+        private void tabAddEmploye_Click(object sender, EventArgs e)
+        {
+
+        }
+        
     }
 }
