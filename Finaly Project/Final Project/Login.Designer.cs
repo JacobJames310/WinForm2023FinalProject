@@ -114,7 +114,8 @@
             // lblCreate
             // 
             this.lblCreate.AutoSize = true;
-            this.lblCreate.Location = new System.Drawing.Point(87, 311);
+            this.lblCreate.ForeColor = System.Drawing.Color.Red;
+            this.lblCreate.Location = new System.Drawing.Point(553, 301);
             this.lblCreate.Name = "lblCreate";
             this.lblCreate.Size = new System.Drawing.Size(0, 15);
             this.lblCreate.TabIndex = 8;
@@ -151,5 +152,6 @@
         private Label label3;
         private Label label4;
         private Label lblCreate;
+        private Label lblError;
     }
 }

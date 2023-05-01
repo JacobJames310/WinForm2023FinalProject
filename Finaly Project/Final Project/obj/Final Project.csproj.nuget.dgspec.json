@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jacob James\\Documents\\WinForm2023FinalProject\\Finaly Project\\Final Project\\Final Project.csproj": {}
+    "C:\\Users\\13142\\OneDrive\\Documents\\GitHubClass\\WinForm2023FinalProject\\Finaly Project\\Final Project\\Final Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jacob James\\Documents\\WinForm2023FinalProject\\Finaly Project\\Final Project\\Final Project.csproj": {
+    "C:\\Users\\13142\\OneDrive\\Documents\\GitHubClass\\WinForm2023FinalProject\\Finaly Project\\Final Project\\Final Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jacob James\\Documents\\WinForm2023FinalProject\\Finaly Project\\Final Project\\Final Project.csproj",
+        "projectUniqueName": "C:\\Users\\13142\\OneDrive\\Documents\\GitHubClass\\WinForm2023FinalProject\\Finaly Project\\Final Project\\Final Project.csproj",
         "projectName": "Final Project",
-        "projectPath": "C:\\Users\\Jacob James\\Documents\\WinForm2023FinalProject\\Finaly Project\\Final Project\\Final Project.csproj",
-        "packagesPath": "C:\\Users\\Jacob James\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jacob James\\Documents\\WinForm2023FinalProject\\Finaly Project\\Final Project\\obj\\",
+        "projectPath": "C:\\Users\\13142\\OneDrive\\Documents\\GitHubClass\\WinForm2023FinalProject\\Finaly Project\\Final Project\\Final Project.csproj",
+        "packagesPath": "C:\\Users\\13142\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\13142\\OneDrive\\Documents\\GitHubClass\\WinForm2023FinalProject\\Finaly Project\\Final Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jacob James\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\13142\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

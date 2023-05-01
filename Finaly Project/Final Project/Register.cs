@@ -21,27 +21,28 @@ namespace Final_Project
             userDb = new CreateUserContext();
             InitializeComponent();
             
+            
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            frmRegister f2 = new frmRegister();
-            frmLogin f1 = new frmLogin();
+            string firstName = txtFirstName.Text;
+            string lastName = txtLastName.Text;
+            string email = txtEmail.Text;
+            string username = txtUsername.Text;
+            string password = txtPassword.Text;
 
-
-
-            if (txtUsername.Text == "" || txtPassword.Text == "" || txtEmail.Text == "" || txtFirstName.Text == "" || txtLastName.Text == "")
+            using (CreateUserContext CreateUserContext = new CreateUserContext())
             {
-                lblError.Visible = true;
-                f2.Close();
+                CreateUserContext.CreateUser.Add(new CreateUser { CreateUserId = username, Password = password, Email = email, FirstName = firstName, LastName = lastName });
+                CreateUserContext.SaveChanges();
             }
-            else
-            {
-                lblError.Visible = false;
-                f1.Show();
-                f2.Close();
-            }
-            
+            MessageBox.Show("Registration successful!");
+
+            frmLogin frm = new frmLogin();
+            frm.Show();
+            this.Hide();
+
         }
     }
 }

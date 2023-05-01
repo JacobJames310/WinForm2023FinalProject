@@ -9,8 +9,8 @@ namespace Final_Project
 {
     internal class CreateUserContext : DbContext
     {
-        public string CompanyName { get; set; }
-        public List<CreateUser> CreateUsers { get; set; }
+        
+        public DbSet<CreateUser> CreateUser { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("Server=(LocalDB)\\MSSQLLocalDB; Database=RegisteredUsers; Trusted_Connection=True; MultipleActiveResultSets=True");
