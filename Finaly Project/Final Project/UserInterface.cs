@@ -7,25 +7,49 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Final_Project
 {
-    public partial class frmUserInterface : CreateUser
+    public partial class frmUserInterface : Form
     {
+        
         public frmUserInterface()
         {
+            
             InitializeComponent();
             
         }
         
-        public void Greeting()
-        {
-            lblGreeting.Text = $"Welcome {FirstName}";
-        }
+        
         private void tabAddEmploye_Click(object sender, EventArgs e)
         {
 
         }
-        
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabDeleteEmployee_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
