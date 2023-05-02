@@ -26,6 +26,10 @@ namespace Final_Project.Migrations
                     b.Property<string>("CreateUserId")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("CompanyName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -50,6 +54,7 @@ namespace Final_Project.Migrations
                         new
                         {
                             CreateUserId = "Jacobjames310",
+                            CompanyName = "James Trucking",
                             Email = "jacobjames339@yahoo.com",
                             FirstName = "Jacob",
                             LastName = "James",
@@ -58,6 +63,7 @@ namespace Final_Project.Migrations
                         new
                         {
                             CreateUserId = "Roshellec494",
+                            CompanyName = "Chen Publishing",
                             Email = "rchen1020@gmail.com",
                             FirstName = "Roshelle",
                             LastName = "Chen",
@@ -66,6 +72,7 @@ namespace Final_Project.Migrations
                         new
                         {
                             CreateUserId = "NyckJ111",
+                            CompanyName = "Johnson Ice-Cream",
                             Email = "njohnson104@yahoo.com",
                             FirstName = "Nyck",
                             LastName = "Johnson",

@@ -1,4 +1,4 @@
-﻿using Final_Project.Migrations;
+﻿//using Final_Project.Migrations;
 using Microsoft.VisualBasic.ApplicationServices;
 using System;
 using System.Collections.Generic;
@@ -31,10 +31,11 @@ namespace Final_Project
             string email = txtEmail.Text;
             string username = txtUsername.Text;
             string password = txtPassword.Text;
+            string companyName = txtCompanyName.Text;   
 
             using (CreateUserContext CreateUserContext = new CreateUserContext())
             {
-                CreateUserContext.CreateUser.Add(new CreateUser { CreateUserId = username, Password = password, Email = email, FirstName = firstName, LastName = lastName });
+                CreateUserContext.CreateUser.Add(new CreateUser { CreateUserId = username, Password = password, Email = email, FirstName = firstName, LastName = lastName, CompanyName = companyName });
                 CreateUserContext.SaveChanges();
             }
             MessageBox.Show("Registration successful!");

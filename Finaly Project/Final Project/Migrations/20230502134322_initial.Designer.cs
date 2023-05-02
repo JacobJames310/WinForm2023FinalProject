@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Final_Project.Migrations
 {
     [DbContext(typeof(CreateUserContext))]
-    [Migration("20230430214756_DBCreation")]
-    partial class DBCreation
+    [Migration("20230502134322_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -28,6 +28,10 @@ namespace Final_Project.Migrations
                 {
                     b.Property<string>("CreateUserId")
                         .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("CompanyName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -53,6 +57,7 @@ namespace Final_Project.Migrations
                         new
                         {
                             CreateUserId = "Jacobjames310",
+                            CompanyName = "James Trucking",
                             Email = "jacobjames339@yahoo.com",
                             FirstName = "Jacob",
                             LastName = "James",
@@ -61,6 +66,7 @@ namespace Final_Project.Migrations
                         new
                         {
                             CreateUserId = "Roshellec494",
+                            CompanyName = "Chen Publishing",
                             Email = "rchen1020@gmail.com",
                             FirstName = "Roshelle",
                             LastName = "Chen",
@@ -69,6 +75,7 @@ namespace Final_Project.Migrations
                         new
                         {
                             CreateUserId = "NyckJ111",
+                            CompanyName = "Johnson Ice-Cream",
                             Email = "njohnson104@yahoo.com",
                             FirstName = "Nyck",
                             LastName = "Johnson",

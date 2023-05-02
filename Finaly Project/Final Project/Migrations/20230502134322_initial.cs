@@ -7,7 +7,7 @@
 namespace Final_Project.Migrations
 {
     /// <inheritdoc />
-    public partial class DBCreation : Migration
+    public partial class initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -20,7 +20,8 @@ namespace Final_Project.Migrations
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CompanyName = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -29,12 +30,12 @@ namespace Final_Project.Migrations
 
             migrationBuilder.InsertData(
                 table: "CreateUser",
-                columns: new[] { "CreateUserId", "Email", "FirstName", "LastName", "Password" },
+                columns: new[] { "CreateUserId", "CompanyName", "Email", "FirstName", "LastName", "Password" },
                 values: new object[,]
                 {
-                    { "Jacobjames310", "jacobjames339@yahoo.com", "Jacob", "James", "jjames339" },
-                    { "NyckJ111", "njohnson104@yahoo.com", "Nyck", "Johnson", "njohnson220" },
-                    { "Roshellec494", "rchen1020@gmail.com", "Roshelle", "Chen", "rchen191" }
+                    { "Jacobjames310", "James Trucking", "jacobjames339@yahoo.com", "Jacob", "James", "jjames339" },
+                    { "NyckJ111", "Johnson Ice-Cream", "njohnson104@yahoo.com", "Nyck", "Johnson", "njohnson220" },
+                    { "Roshellec494", "Chen Publishing", "rchen1020@gmail.com", "Roshelle", "Chen", "rchen191" }
                 });
         }
 
