@@ -45,7 +45,19 @@ namespace Final_Project
             elapsed = totalElapsedTime + (DateTime.Now - startTime);
             rtbTimeWorked.Text = elapsed.ToString(@"hh\:mm\:ss");
         }
+        private void Logout()
+        {
+           
 
+            this.Hide();
+
+
+            frmLogin frmLogin = new frmLogin();
+            frmLogin.ShowDialog();
+
+
+            this.Close();
+        }
         private void btnCockOut_Click(object sender, EventArgs e)
         {
             totalElapsedTime += DateTime.Now - startTime;
@@ -55,6 +67,11 @@ namespace Final_Project
         private void timer1_Tick(object sender, EventArgs e)
         {
             UpdateStopWatchDisplay();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Logout();
         }
     }
 }

@@ -101,7 +101,7 @@ namespace Final_Project
             txtPassword.Text = "";
             txtHourlyPay.Text = "";
             rtbEmployeeInfo.Text += $"{firstName} {lastName}'s email is {email} and their username is {username} and password is {password}, their hourly pay is {hourlyPay}.\n";
-            rtbPayOverview.Text += $"{firstName} {lastName} makes {hourlyPay:c} per hour.";
+            rtbPayOverview.Text += $"{firstName} {lastName} makes {hourlyPay:c} per hour.\n";
             foreach (Employee cbEmployee in employeeList)
             {
                 cbEmployees.Items.Add(username);

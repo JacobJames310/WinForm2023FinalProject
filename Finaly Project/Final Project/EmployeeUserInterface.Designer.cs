@@ -38,8 +38,9 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btnClockIn = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.btnCockOut = new System.Windows.Forms.Button();
+            this.btnClockOut = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnLogout = new System.Windows.Forms.Button();
             this.tabEmployees.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -128,7 +129,7 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.btnCockOut);
+            this.tabPage4.Controls.Add(this.btnClockOut);
             this.tabPage4.Location = new System.Drawing.Point(4, 24);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(544, 252);
@@ -136,21 +137,32 @@
             this.tabPage4.Text = "Clock out";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // btnCockOut
+            // btnClockOut
             // 
-            this.btnCockOut.Location = new System.Drawing.Point(336, 51);
-            this.btnCockOut.Name = "btnCockOut";
-            this.btnCockOut.Size = new System.Drawing.Size(181, 134);
-            this.btnCockOut.TabIndex = 0;
-            this.btnCockOut.Text = "Clock Out";
-            this.btnCockOut.UseVisualStyleBackColor = true;
-            this.btnCockOut.Click += new System.EventHandler(this.btnCockOut_Click);
+            this.btnClockOut.Location = new System.Drawing.Point(336, 51);
+            this.btnClockOut.Name = "btnClockOut";
+            this.btnClockOut.Size = new System.Drawing.Size(181, 134);
+            this.btnClockOut.TabIndex = 0;
+            this.btnClockOut.Text = "Clock Out";
+            this.btnClockOut.UseVisualStyleBackColor = true;
+            this.btnClockOut.Click += new System.EventHandler(this.btnCockOut_Click);
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Location = new System.Drawing.Point(678, 29);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(73, 54);
+            this.btnLogout.TabIndex = 5;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // EmployeeUserInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.tabEmployees);
             this.Controls.Add(this.lblGreeting);
             this.Name = "EmployeeUserInterface";
@@ -176,7 +188,8 @@
         private TabPage tabPage3;
         private Button btnClockIn;
         private TabPage tabPage4;
-        private Button btnCockOut;
+        private Button btnClockOut;
         private System.Windows.Forms.Timer timer1;
+        private Button btnLogout;
     }
 }
