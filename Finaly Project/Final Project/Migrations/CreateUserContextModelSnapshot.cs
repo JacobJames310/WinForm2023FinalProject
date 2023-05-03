@@ -56,7 +56,6 @@ namespace Final_Project.Migrations
                             CreateUserId = "Jacobjames310",
                             CompanyName = "James Trucking",
                             Email = "jacobjames339@yahoo.com",
-                            FirstName = "Jacob",
                             LastName = "James",
                             Password = "jjames339"
                         },
@@ -65,7 +64,6 @@ namespace Final_Project.Migrations
                             CreateUserId = "Roshellec494",
                             CompanyName = "Chen Publishing",
                             Email = "rchen1020@gmail.com",
-                            FirstName = "Roshelle",
                             LastName = "Chen",
                             Password = "rchen191"
                         },

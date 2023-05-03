@@ -17,7 +17,6 @@ namespace Final_Project
         public string LastName { get; set; }
         public string CompanyName { get; set; }
         
+        
     }
-    
-    
 }

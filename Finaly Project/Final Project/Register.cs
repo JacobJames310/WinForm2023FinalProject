@@ -31,8 +31,8 @@ namespace Final_Project
             string email = txtEmail.Text;
             string username = txtUsername.Text;
             string password = txtPassword.Text;
-            string companyName = txtCompanyName.Text;   
-
+            string companyName = txtCompanyName.Text;
+            
             using (CreateUserContext CreateUserContext = new CreateUserContext())
             {
                 CreateUserContext.CreateUser.Add(new CreateUser { CreateUserId = username, Password = password, Email = email, FirstName = firstName, LastName = lastName, CompanyName = companyName });

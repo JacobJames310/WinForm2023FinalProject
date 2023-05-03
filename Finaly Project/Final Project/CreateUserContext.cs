@@ -18,9 +18,9 @@ namespace Final_Project
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<CreateUser>().HasData(
-                new CreateUser { CreateUserId = "Jacobjames310", Password = "jjames339", FirstName = "Jacob", LastName = "James", Email = "jacobjames339@yahoo.com", CompanyName = "James Trucking" },
-                new CreateUser { CreateUserId = "Roshellec494", Password = "rchen191", FirstName = "Roshelle", LastName = "Chen", Email = "rchen1020@gmail.com", CompanyName = "Chen Publishing"},
-                new CreateUser { CreateUserId = "NyckJ111", Password = "njohnson220", FirstName = "Nyck", LastName = "Johnson", Email = "njohnson104@yahoo.com", CompanyName = "Johnson Ice-Cream"}
+                new CreateUser { CreateUserId = "Jacobjames310", Password = "jjames339", FirstName = "Jacob", LastName = "James", Email = "jacobjames339@yahoo.com", CompanyName = "James Trucking",   },
+                new CreateUser { CreateUserId = "Roshellec494", Password = "rchen191", FirstName = "Roshelle", LastName = "Chen", Email = "rchen1020@gmail.com", CompanyName = "Chen Publishing",   },
+                new CreateUser { CreateUserId = "NyckJ111", Password = "njohnson220", FirstName = "Nyck", LastName = "Johnson", Email = "njohnson104@yahoo.com", CompanyName = "Johnson Ice-Cream",  }
                 );
         } 
         
