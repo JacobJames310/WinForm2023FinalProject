@@ -15,12 +15,21 @@ namespace Final_Project
         private DateTime startTime;
         private TimeSpan totalElapsedTime;
         private DateTime lastResetTime;
-        public EmployeeUserInterface()
+        private decimal hourlyPayroll;
+
+        public EmployeeUserInterface(decimal hourlyPayroll)
         {
             InitializeComponent();
             ResetStopWatch();
+            this.hourlyPayroll = hourlyPayroll;
+
         }
 
+        private decimal CalculatePay()
+        {
+            decimal pay = (decimal)totalElapsedTime.TotalHours * hourlyPayroll;
+            return Math.Round(pay, 2);
+        }
         private void btnClockIn_Click(object sender, EventArgs e)
         {
             startTime = DateTime.Now;
@@ -38,14 +47,15 @@ namespace Final_Project
             TimeSpan elapsed;
             if (DateTime.Now.DayOfWeek != lastResetTime.DayOfWeek)
             {
-                
                 ResetStopWatch();
                 return;
             }
             elapsed = totalElapsedTime + (DateTime.Now - startTime);
             rtbTimeWorked.Text = elapsed.ToString(@"hh\:mm\:ss");
+            
+
         }
-        private void Logout()
+        private void Logout() 
         {
            
 
@@ -63,6 +73,7 @@ namespace Final_Project
             totalElapsedTime += DateTime.Now - startTime;
             timer1.Enabled = false;
             UpdateStopWatchDisplay();
+            
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -73,5 +84,6 @@ namespace Final_Project
         {
             Logout();
         }
+        
     }
 }

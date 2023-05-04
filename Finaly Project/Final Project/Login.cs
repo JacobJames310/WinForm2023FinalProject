@@ -5,6 +5,7 @@
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualBasic.ApplicationServices;
+using System.Collections.Generic;
 using System.Data.Common;
 using System.Text;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
@@ -17,15 +18,15 @@ namespace Final_Project
         CreateUserContext userDb;
         List<CreateUser> userList;
         List<Employee> employeeList;
-
+        private decimal hourlyPayroll;
         public frmLogin()
         {
             userDb = new CreateUserContext();
             InitializeComponent();
-            userList = userDb.CreateUser.Select(c => c).ToList();
+            userList = userDb.CreateUser.Select(c => c).Distinct().ToList();
             employeeList = new List<Employee>();
-            employeeList.Add(new Employee { FirstName = "John", LastName = "Doe", Username = "jdoe", Password = "password", HourlyPay = 15.0m, Email = "jdoe@gmail.com"});
-            
+            employeeList.Add(new Employee { FirstName = "John", LastName = "Doe", Username = "jdoe", Password = "password", HourlyPay = 15.0m, Email = "jdoe@gmail.com" });
+
         }
 
         
@@ -45,22 +46,32 @@ namespace Final_Project
             string username = txtUsername.Text;
             string password = txtPassword.Text;
             CreateUser user = userList.FirstOrDefault(u => u.CreateUserId == username && u.Password == password);
-            if (user.CreateUserId == username && user.Password == password)
+            if (user != null && user.CreateUserId == username && user.Password == password)
             {
                 MessageBox.Show("Login successful!");
-                frmUserInterface frmUserInterface = new frmUserInterface(employeeList);
+                frmUserInterface frmUserInterface = new frmUserInterface(employeeList,username,password);
                 frmUserInterface.Show();
+                frmLogin frmLogin = new frmLogin();
+                frmLogin.Hide();
                 frmUserInterface.AddEmployee(user.CreateUserId, user.Password);
+                txtPassword.Text = "";
+                txtUsername.Text = "";
             }
             else if (CheckEmployeeLogin(username, password))
             {
                 MessageBox.Show("Welcome, employee!");
-                EmployeeUserInterface employeeUserInterface = new EmployeeUserInterface();
+                EmployeeUserInterface employeeUserInterface = new EmployeeUserInterface(hourlyPayroll);
                 employeeUserInterface.Show();
+                frmLogin frmLogin = new frmLogin();
+                frmLogin.Hide();
+                txtPassword.Text = "";
+                txtUsername.Text = "";
             }
             else
             {
                 MessageBox.Show("Invalid username or password");
+                txtPassword.Text = "";
+                txtUsername.Text = "";
             }
         }
         private bool CheckEmployeeLogin(string username, string password)

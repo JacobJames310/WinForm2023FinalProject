@@ -27,15 +27,15 @@ namespace Final_Project
     public partial class frmUserInterface : Form
     {
         private List<Employee> employeeList ;
-        public frmUserInterface(List<Employee> employeeList)
+        public frmUserInterface(List<Employee> employeeList, string username, string password)
         {
             
             InitializeComponent();
             this.employeeList = employeeList;
 
         }
-        
-        
+
+       
         
         private void tabAddEmploye_Click(object sender, EventArgs e)
         {
@@ -202,6 +202,11 @@ namespace Final_Project
             rtbPayOverview.Text = selectedEmployees.HourlyPay.ToString("C");
             
             
+        }
+
+        private void frmUserInterface_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -38,8 +38,6 @@
             this.btnUpdatePay = new System.Windows.Forms.Button();
             this.txtUpdatePay = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.tabTimeWorked = new System.Windows.Forms.TabPage();
-            this.rtbTimeWorked = new System.Windows.Forms.RichTextBox();
             this.tabAdmin = new System.Windows.Forms.TabControl();
             this.tabAddEmploye = new System.Windows.Forms.TabPage();
             this.txtHourlyPay = new System.Windows.Forms.TextBox();
@@ -66,7 +64,6 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.tabEmployees.SuspendLayout();
             this.tabPay.SuspendLayout();
-            this.tabTimeWorked.SuspendLayout();
             this.tabAdmin.SuspendLayout();
             this.tabAddEmploye.SuspendLayout();
             this.tabDeleteEmployee.SuspendLayout();
@@ -166,30 +163,10 @@
             this.label8.TabIndex = 8;
             this.label8.Text = "What employee\'s hourly pay are you updating?";
             // 
-            // tabTimeWorked
-            // 
-            this.tabTimeWorked.Controls.Add(this.rtbTimeWorked);
-            this.tabTimeWorked.Location = new System.Drawing.Point(4, 24);
-            this.tabTimeWorked.Name = "tabTimeWorked";
-            this.tabTimeWorked.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTimeWorked.Size = new System.Drawing.Size(540, 241);
-            this.tabTimeWorked.TabIndex = 3;
-            this.tabTimeWorked.Text = "Time Worked";
-            this.tabTimeWorked.UseVisualStyleBackColor = true;
-            // 
-            // rtbTimeWorked
-            // 
-            this.rtbTimeWorked.Location = new System.Drawing.Point(6, 6);
-            this.rtbTimeWorked.Name = "rtbTimeWorked";
-            this.rtbTimeWorked.Size = new System.Drawing.Size(528, 229);
-            this.rtbTimeWorked.TabIndex = 0;
-            this.rtbTimeWorked.Text = "";
-            // 
             // tabAdmin
             // 
             this.tabAdmin.Controls.Add(this.tabAddEmploye);
             this.tabAdmin.Controls.Add(this.tabDeleteEmployee);
-            this.tabAdmin.Controls.Add(this.tabTimeWorked);
             this.tabAdmin.Controls.Add(this.tabPay);
             this.tabAdmin.Controls.Add(this.tabEmployees);
             this.tabAdmin.Location = new System.Drawing.Point(93, 90);
@@ -429,10 +406,10 @@
             this.Controls.Add(this.tabAdmin);
             this.Name = "frmUserInterface";
             this.Text = "UserInterface";
+            this.Load += new System.EventHandler(this.frmUserInterface_Load);
             this.tabEmployees.ResumeLayout(false);
             this.tabPay.ResumeLayout(false);
             this.tabPay.PerformLayout();
-            this.tabTimeWorked.ResumeLayout(false);
             this.tabAdmin.ResumeLayout(false);
             this.tabAddEmploye.ResumeLayout(false);
             this.tabAddEmploye.PerformLayout();
@@ -447,7 +424,6 @@
         private Label lblGreeting;
         private TabPage tabEmployees;
         private TabPage tabPay;
-        private TabPage tabTimeWorked;
         private TabPage tabClockInOut;
         private TabControl tabAdmin;
         private TabPage tabAddEmploye;
@@ -472,7 +448,6 @@
         private TextBox txtDeletePassword;
         private Label label7;
         private Button btnLogout;
-        private RichTextBox rtbTimeWorked;
         private TextBox txtHourlyPay;
         private Label label12;
         private Button btnUpdatePay;
